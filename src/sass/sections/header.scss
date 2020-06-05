@@ -1,0 +1,141 @@
+.header-wrapper {
+  text-align: center;
+  min-height: 1000px;
+  background-image: linear-gradient(
+      rgba(243, 129, 129, 0.9),
+      rgba(252, 227, 138, 0.9)
+    ),
+    url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  padding-top: 22px;
+  margin-bottom: 164px;
+}
+
+.logo__link {
+  font-size: 2.1429rem;
+  font-weight: bold;
+}
+
+.logo__link:hover,
+.logo__link:focus {
+  color: #fce38a;
+}
+
+.main-menu {
+  display: flex;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-right: 50px;
+}
+
+.main-menu__item {
+  position: relative;
+}
+
+.main-menu__item:not(:last-child) {
+  margin-right: 56px;
+}
+
+.main-menu__link::after {
+  content: '';
+  background-color: #fce38a;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 8px auto 0px;
+  width: 50px;
+  height: 3px;
+  opacity: 0;
+  transition: all 200ms linear;
+}
+
+.main-menu__link:hover::after,
+.main-menu__link:focus::after {
+  opacity: 1;
+}
+
+.main-menu__link:hover,
+.main-menu__link:focus {
+  color: #fce38a;
+}
+
+.header-nav-buttons-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  width: 76px;
+}
+
+.header-buttons__item {
+  padding-left: 0;
+  padding-right: 0;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.header-buttons__svg {
+  transition: all 200ms linear;
+  fill: #ffffff;
+  width: 18px;
+  height: 18px;
+}
+
+.header-buttons__item:hover .header-buttons__svg {
+  fill: #fce38a;
+}
+
+.banner {
+  width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner__text {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 5.1429rem;
+  text-transform: capitalize;
+  margin-bottom: 38px;
+}
+
+.banner__title {
+  font-size: 10.7143rem;
+  text-transform: uppercase;
+  line-height: 10rem;
+  margin-bottom: 108px;
+  letter-spacing: -0.027em;
+}
+
+.banner__button {
+  padding: 10px 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 3px solid #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+  box-shadow: none;
+}
