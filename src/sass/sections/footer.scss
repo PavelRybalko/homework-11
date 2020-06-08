@@ -4,39 +4,35 @@
   justify-content: space-between;
   align-items: center;
   padding: 8px 0px;
-}
-
-.footer__link {
-  text-decoration: none;
-  color: #f38181;
+  &__link {
+    text-decoration: none;
+    color: $titles-underline-color;
+  }
 }
 
 .footer-form {
   display: flex;
-}
-
-.footer-form__email {
-  padding-left: 12px;
-  font-family: 'Roboto', sans-serif;
-  font-style: italic;
-  font-size: 1.0714rem;
-  border: 1px solid #e5e5e5;
-  height: 40px;
-  width: 230px;
-}
-
-.footer-form__email::placeholder {
-  color: #cccccc;
-}
-
-.footer-form__btn {
-  background-color: #95e1d3;
-  color: #ffffff;
-  box-shadow: none;
-  border: none;
-  height: 40px;
-  width: 150px;
-  font-weight: bold;
-  text-transform: uppercase;
-  cursor: pointer;
+  &__email {
+    padding-left: 12px;
+    font-family: $secondary-font;
+    font-style: italic;
+    font-size: 1.0714rem;
+    border: 1px solid #e7e7e7;
+    height: 40px;
+    width: 230px;
+    &::placeholder {
+      color: #cccccc;
+    }
+  }
+  &__btn {
+    background-color: #95e1d3;
+    color: $header-text-color;
+    box-shadow: none;
+    border: none;
+    height: 40px;
+    width: 150px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
 }

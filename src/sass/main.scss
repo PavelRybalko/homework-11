@@ -3,10 +3,13 @@
  */
 
 @import 'normalize.scss';
+@import './helpers/variables.scss';
+@import './helpers/mixins.scss';
 @import 'base.scss';
 @import './components/container.scss';
 
 @import './sections/header.scss';
+@import './components/section-header.scss';
 @import './sections/services.scss';
 @import './sections/team.scss';
 @import './sections/footer.scss';

@@ -5,7 +5,7 @@
 .team__text {
   padding-top: 40px;
   color: #999999;
-  font-family: 'Roboto', sans-serif;
+  font-family: $secondary-font;
   font-size: 1.0714rem;
   line-height: 1.7143rem;
   width: 980px;
@@ -17,23 +17,20 @@
 .team-list {
   display: flex;
   justify-content: space-between;
-}
-
-.team-list__item {
-  text-align: center;
-  width: 380px;
+  &__item {
+    text-align: center;
+    width: 380px;
+  }
 }
 
 .team-list-wrapper {
   position: relative;
-}
-
-.team-list-wrapper:hover .team-list-wrapper__image {
-  transform: translate(-10px, -10px);
-}
-
-.team-list-wrapper__image {
-  transition: all 200ms linear;
+  &:hover .team-list-wrapper__image {
+    transform: translate(-10px, -10px);
+  }
+  &__image {
+    @include transition;
+  }
 }
 
 .overlay-team {
@@ -51,17 +48,14 @@
     rgba(252, 227, 138, 0.9) 0%,
     rgba(243, 129, 129, 0.9) 100%
   );
-  transition-property: opacity, transform, box-shadow;
-  transition-duration: 200ms;
-  transition-timing-function: linear;
-}
-
-.overlay-team:hover,
-.overlay-team:focus,
-.overlay-team:focus-within {
-  opacity: 1;
-  transform: translate(-10px, -10px);
-  box-shadow: 10px 10px 0px 0px #95e1d3;
+  @include transition;
+  &:hover,
+  &:focus,
+  &:focus-within {
+    opacity: 1;
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px 0px 0px #95e1d3;
+  }
 }
 
 .overlay-team__link {
@@ -72,40 +66,37 @@
   height: 56px;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #fce38a;
-  transition: all 200ms linear;
-}
-
-.overlay-team__link:not(:last-child) {
-  border-right: 1px solid #f38181;
+  background-color: $header-hover-color;
+  @include transition;
+  &:not(:last-child) {
+    border-right: 1px solid $titles-underline-color;
+  }
+  &:hover,
+  &:focus {
+    background-color: $titles-underline-color;
+  }
+  &:hover .overlay-team__svg {
+    fill: $header-text-color;
+  }
 }
 
 .overlay-team__svg {
-  fill: #f38181;
+  fill: $titles-underline-color;
   width: 32px;
   height: 32px;
 }
 
-.overlay-team__link:hover,
-.overlay-team__link:focus {
-  background-color: #f38181;
-}
-
-.overlay-team__link:hover .overlay-team__svg {
-  fill: #ffffff;
-}
-
 .team-list__name {
   text-transform: uppercase;
-  color: #333333;
+  color: $titles-color;
   margin: 28px 0px 10px;
 }
 
 .team-list__occupation {
-  font-family: 'Roboto', sans-serif;
+  font-family: $secondary-font;
   font-size: 1.0714rem;
   font-weight: 300;
   font-style: italic;
-  color: #999999;
+  color: $text-color;
   margin: 0px;
 }

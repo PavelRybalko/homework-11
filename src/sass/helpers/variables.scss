@@ -1,0 +1,32 @@
+$main-font: 'Montserrat', sans-serif;
+$secondary-font: 'Roboto', serif;
+$script-font: 'Kaushan Script', cursive;
+
+$header-text-color: #ffffff;
+$header-hover-color: #fce38a;
+$titles-color: #333333;
+$titles-underline-color: #f38181;
+$text-color: #999999;
+
+// $colors: (
+//   $header-text-color: #ffffff,
+//   $header-hover-color: #fce38a,
+//   $titles-color: #333333,
+//   $titles-underline-color: #f38181,
+//   $text-color: #999999,
+// );
+// .header {
+//   color: map-get($colors, header-text-color);
+// }
+
+// color picker function
+// @function color($key) {
+//   @if map-has-key($colors, $key) {
+//     return map-get($colors, $key);
+//   }
+//   @return null;
+// }
+// .header {
+//   color: color(header-text-color);
+//   background-color: color(titles-color);
+// }
